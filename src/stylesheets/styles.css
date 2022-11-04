@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  color: #f6f5f0;
+  background: #2d2d2b;
+}
+
+.middlerow {
+  display: flex;
+  justify-content: center;
+}
+
+.levelselector {
+  float: left;
+  width: 200px;
+  height: 478px;
+  padding-right: 100px;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+}
+
+.leaderboard {
+  float: right;
+  width: 200px;
+  height: 478px;
+  margin-left: 100px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10%;
+}
+
+table {
+  animation: popUp 2s;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5%;
+}
+
+.welcome {
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 20px;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-size: 60px;
+  margin: 5px;
+}
+
+#changeuser {
+  display: flex;
+  height: 50px;
+}
+
+.title,
+.intructionstitle,
+#instructions {
+  animation: slideIn 2.5s;
+}
+.slot {
+  width: 105px;
+  height: 105px;
+  background-color: #2d2d2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 5px #000000;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.card {
+  width: 105px;
+  height: 105px;
+  background-color: #f0e4d8;
+  color: #2d2d2b;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: center;
+}
+
+button {
+  border: none;
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #f6f5f0;
+  background-color: #000000;
+  border-radius: 20%;
+  border-bottom: #f0e4d8 solid 5px;
+}
+
+.levelselector {
+  float: left;
+  width: 200px;
+  height: 478px;
+  margin-right: 100px;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10%;
+}
+
+#level1,
+#level2,
+#level3,
+#custom,
+#random {
+  color: #f6f5f0;
+  width: 100%;
+  height: 10%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spot {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.placeimage {
+  display: flex;
+  width: 50px;
+  height: 100%;
+  font-size: 35px;
+  border-radius: 15px;
+  color: #2d2d2b;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0e4d8;
+}
+
+.usertext {
+  display: flex;
+  width: 100px;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #f6f5f0;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderboardtitle {
+  font-size: 18px;
+  text-align: center;
+}
+
+button:hover,
+.slot:hover {
+  cursor: pointer;
+}
+
+.start.is-clicked,
+.reset.is-clicked,
+#custom.is-clicked,
+#level1.is-clicked,
+#level2.is-clicked,
+#level3.is-clicked,
+#random.is-clicked {
+  color: #2d2d2b;
+  background-color: #f0e4d8;
+  border-bottom: #000000 solid 5px;
+}
+
+#moves {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 780px) {
+  .slot {
+    width: 55px;
+    height: 55px;
+  }
+  .card {
+    width: 50px;
+    height: 50px;
+  }
+  button {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .intructionstitle {
+    font-size: 30px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  #moves {
+    font-size: 30px;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-50vh);
+    opacity: 0%;
+  }
+  to {
+    /* opacity: 100%; */
+    transform: translateX(0vh);
+  }
+}
+@keyframes popUp {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

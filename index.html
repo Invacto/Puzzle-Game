@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/stylesheets/styles.css" />
+    <link rel="stylesheet" href="src/stylesheets/usernameModal.css" />
+    <link rel="stylesheet" href="src/stylesheets/winStyle.css" />
+    <script src="src/scripts/index.js" defer></script>
+    <script src="src/scripts/events.js" defer></script>
+    <script src="src/scripts/usernameModal.js" defer></script>
+    <script src="src/scripts/buttonListeners.js" defer></script>
+    <script src="src/scripts/storageSaver.js" defer></script>
+  </head>
+
+  <body>
+    <header class="welcome">
+      <h1 class="title">Slider Puzzle 🎲</h1>
+      <h2>Instructions: Match up the tiles in order.</h2>
+      <div class="usergreetingrow">
+        <p id="usergreeting">Welcome</p>
+        <button id="changeuser">Change User</button>
+      </div>
+      <nav id="btnNav">
+        <button class="start">Start</button>
+        <button class="reset">Reset</button>
+      </nav>
+    </header>
+    <div class="win-container">
+      <div class="win">
+        <h1 id="winner-text">You won!</h1>
+        <button id="closewin">X</button>
+      </div>
+    </div>
+    <div class="username-modal-container">
+      <div class="username-modal">
+        <button id="closemodalbutton">X</button>
+        <h1 id="modalheader">Enter your Name:</h1>
+        <form id="usernameform">
+          <input id="usernameinput" type="text" />
+          <button id="usernamesubmit">Enter</button>
+        </form>
+      </div>
+    </div>
+    <div class="middlerow">
+      <div class="levelselector">
+        <button id="custom">Custom ⚙️</button>
+        <button id="level1">Level 1</button>
+        <button id="level2">Level 2</button>
+        <button id="level3">Level 3</button>
+        <button id="random">Random Board</button>
+      </div>
+      <div class="board">
+        <table>
+          <tr>
+            <td>
+              <div class="slot" id="1">
+                <div class="card" id="1">1</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="2">
+                <div class="card" id="2">2</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="3">
+                <div class="card" id="3">3</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="4">
+                <div class="card" id="4">4</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="slot" id="5">
+                <div class="card" id="5">5</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="6">
+                <div class="card" id="6">6</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="7">
+                <div class="card" id="7">7</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="8">
+                <div class="card" id="8">8</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="slot" id="9">
+                <div class="card" id="9">9</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="10">
+                <div class="card" id="10">10</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="11">
+                <div class="card" id="11">11</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="12">
+                <div class="card" id="12">12</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="slot" id="13">
+                <div class="card" id="13">13</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="14">
+                <div class="card" id="14">14</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="15">
+                <div class="card" id="15">15</div>
+              </div>
+            </td>
+            <td>
+              <div class="slot" id="16"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="leaderboard">
+        <div class="leaderboardtitle">
+          LEVEL <span id="leaderboardlevel"> Customized </span> SCORES 🏆
+        </div>
+        <div class="spot" id="1">
+          <div class="placeimage" id="1">1</div>
+          <div class="usertext" id="1"></div>
+        </div>
+        <div class="spot" id="2">
+          <div class="placeimage" id="2">2</div>
+          <div class="usertext" id="2"></div>
+        </div>
+        <div class="spot" id="3">
+          <div class="placeimage" id="3">3</div>
+          <div class="usertext" id="3"></div>
+        </div>
+        <div class="spot" id="4">
+          <div class="placeimage" id="4">4</div>
+          <div class="usertext" id="4"></div>
+        </div>
+        <div class="spot" id="5">
+          <div class="placeimage" id="5">5</div>
+          <div class="usertext" id="5"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p id="moves">Moves: <span id="moveNum">0</span></p>
+    </div>
+  </body>
+</html>

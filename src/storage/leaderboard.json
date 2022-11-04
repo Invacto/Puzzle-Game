@@ -1,0 +1,15 @@
+{
+  "levels": {
+    "custom": [
+      { "username": "Owasimul", "score": 28 },
+      { "username": "Nikita", "score": 5 },
+      { "username": "Justin", "score": 20 },
+      { "username": "Jason", "score": 18 },
+      { "username": "Newman", "score": 1 }
+    ],
+    "1": [],
+    "2": [],
+    "3": [],
+    "random": []
+  }
+}

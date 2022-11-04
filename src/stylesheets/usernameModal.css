@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+.username-modal-container {
+  display: none;
+}
+
+.username-modal-container.is-toggled {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+  animation: backgroundFadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+.username-modal {
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #2d2d2b;
+  color: #f6f5f0;
+}
+
+#modalheader {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: 150px;
+  margin-right: 200px;
+}
+
+#closemodalbutton {
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #f6f5f0;
+}
+
+#usernameform {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  padding-top: 15px;
+  border-radius: 15px;
+}
+
+#usernameinput {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  font-family: "Comfortaa", cursive;
+  font-size: 30px;
+  background-color: #f0e4d8;
+  border-color: black;
+  border-radius: 15px;
+  border-width: thick;
+}
+
+#usernamesubmit {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  color: #f6f5f0;
+  border-radius: 15px;
+  box-shadow: 5px 4px 8px #888888;
+}
+
+@keyframes backgroundFadeIn {
+  from {
+    opacity: 0%;
+    padding-top: 0px;
+  }
+  to {
+    opacity: 100%;
+    padding-top: 200px;
+  }
+}
+
+.usergreetingrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#usergreeting {
+  display: flex;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

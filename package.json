@@ -1,0 +1,21 @@
+{
+  "name": "owasimul-sidick-justin-lema-nikita-masenov-project3-slider-puzzle",
+  "version": "1.0.0",
+  "description": "A slider game made by Nikita, Justin, Owasimul",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "typescript": "4.4.4"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}
